@@ -117,7 +117,7 @@
     (solder_mask_margin 0.102) (tstamp 02bf85de-1b7c-4ced-a47d-f27b0b40927b))
   (pad "J4_10" thru_hole circle (at 20.32 20.32) (size 1.52 1.52) (drill 0.89) (layers "*.Cu" "*.Mask")
     (solder_mask_margin 0.102) (tstamp f7b9270c-bbb1-48f9-bb22-46be5987a72c))
-  (model "${KIPRJMOD}/../models/ti_EKTM4C123GXL.step"
+  (model "${KIPRJMOD}/models/ti_EKTM4C123GXL.step"
     (offset (xyz 0 0 8))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

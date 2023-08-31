@@ -41,8 +41,8 @@
   (pad "1" thru_hole circle (at -4.602 1.27) (size 1.2 1.2) (drill 0.8) (layers "*.Cu" "*.Mask") (tstamp c5420c45-1240-4bee-aaf1-1adc69f6945a))
   (pad "2" thru_hole circle (at 4.602 1.27) (size 1.2 1.2) (drill 0.8) (layers "*.Cu" "*.Mask") (tstamp c33914db-a2e8-4b77-b0ca-04f7d5c815a9))
   (pad "3" thru_hole circle (at 4.602 -1.27) (size 1.2 1.2) (drill 0.8) (layers "*.Cu" "*.Mask") (tstamp 41bc6e5e-57f4-45b7-9156-1b2ac4d8d5af))
-  (model "${KIPRJMOD}/../models/vishay_IRLD024PBF.stp"
-    (offset (xyz 0 0 0))
+  (model "${KIPRJMOD}/models/vishay_IRLD024PBF.stp"
+    (offset (xyz 0 0 -1))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
   )

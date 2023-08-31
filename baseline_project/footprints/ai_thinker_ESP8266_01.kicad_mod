@@ -5,7 +5,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
     (tstamp fbeb594f-26ed-4680-92c2-fb203ec1b900)
   )
-  (fp_text value "XCVR_ESP8266-01/ESP-01" (at 6.41 14.235) (layer "F.Fab")
+  (fp_text value "XCVR_ESP8266-01/ESP-01" (at 0 13.5) (layer "F.Fab")
       (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 96e4a477-af42-4178-907b-d37ed84342a2)
   )
@@ -93,7 +93,7 @@
       )
     )
   )
-  (model "${KIPRJMOD}/../models/ai_thinker_ESP8266-01.step"
+  (model "${KIPRJMOD}/models/ai_thinker_ESP8266-01.step"
     (offset (xyz 0 0 0.5))
     (scale (xyz 1 1 1))
     (rotate (xyz -90 0 0))
