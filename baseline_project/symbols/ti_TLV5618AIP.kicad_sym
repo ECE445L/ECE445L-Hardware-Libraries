@@ -6,7 +6,7 @@
     (property "Value" "TLV5618AIP" (at -8.89 8.89 0)
       (effects (font (size 1.27 1.27)) (justify left top))
     )
-    (property "Footprint" "footprints:ti_TLV5618AIP" (at 10.16 -91.11 0)
+    (property "Footprint" "ECE445L:DIP-8_W7.62mm_LongPads" (at 10.16 -91.11 0)
       (effects (font (size 1.27 1.27)) (justify left top) hide)
     )
     (property "Datasheet" "http://www.ti.com/lit/ds/symlink/tlv5618a.pdf" (at 10.16 -191.11 0)

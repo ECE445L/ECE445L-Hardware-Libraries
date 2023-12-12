@@ -6,7 +6,7 @@
     (property "Value" "EK-TM4C123GXL" (at -12.7129 -38.1075 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
     )
-    (property "Footprint" "footprints:ti_EKTM4C123GXL" (at 0 0 0)
+    (property "Footprint" "ECE445L:ti_EKTM4C123GXL" (at 0 0 0)
       (effects (font (size 1.27 1.27)) (justify bottom) hide)
     )
     (property "Datasheet" "https://www.ti.com/lit/ds/symlink/tm4c123gh6pm.pdf?ts=1693244962384&ref_url=https%253A%252F%252Fwww.google.com%252F" (at 0 0 0)
