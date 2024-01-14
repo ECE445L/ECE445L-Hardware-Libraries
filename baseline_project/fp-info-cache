@@ -1,4 +1,4 @@
-22434884049887988
+22436586562068271
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -55040,6 +55040,13 @@ Through hole pin header THT 1x03 2.54mm single row
 0
 3
 3
+ECE445L
+PinHeader_1x04_P2.54mm_Vertical
+Through hole straight pin header, 1x04, 2.54mm pitch, single row
+Through hole pin header THT 1x04 2.54mm single row
+0
+4
+4
 ECE445L
 R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal
 Resistor, Axial_DIN0204 series, Axial, Horizontal, pin pitch=7.62mm, 0.167W, length*diameter=3.6*1.6mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf
