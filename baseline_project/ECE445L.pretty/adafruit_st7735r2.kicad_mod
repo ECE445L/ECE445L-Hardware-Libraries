@@ -1,4 +1,4 @@
-(footprint "adafruit_st7735r" (version 20221018) (generator pcbnew)
+(footprint "adafruit_st7735r2" (version 20221018) (generator pcbnew)
   (layer "F.Cu")
   (attr through_hole)
   (fp_text reference "REF**" (at -13.97 29.845) (layer "F.SilkS")
@@ -92,13 +92,13 @@
   (pad "10" thru_hole circle (at 11.43 25.4 90) (size 1.778 1.778) (drill 1.016) (layers "*.Cu" "*.Mask")
     (solder_mask_margin 0.102) (tstamp e3eadf66-7fa0-444c-bb80-16a04d3d7e9a))
   (model "${KIPRJMOD}/models/adafruit_st7735r.stp"
-    (offset (xyz 29 -17.5 2.5))
+    (offset (xyz -16.5 -28.5 2.5))
     (scale (xyz 1 1 1))
-    (rotate (xyz 0 0 0))
+    (rotate (xyz 0 0 90))
   )
   (model "${KICAD7_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x08_P2.54mm_Vertical.wrl"
-    (offset (xyz -25.25 9 2.5))
+    (offset (xyz -8.75 -25.5 2.5))
     (scale (xyz 1 1 1))
-    (rotate (xyz 0 180 0))
+    (rotate (xyz 0 180 -90))
   )
 )
