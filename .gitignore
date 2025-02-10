@@ -33,4 +33,4 @@ fp-info-cache
 # Backup files since we are using version controll
 **/ECE319K_Starter-backups/*.zip
 **/ECE445L_Starter-backups/*.zip
-**/Lab6-backups/*.zip
+**/ECE445L_Lab6-backups/*.zip
