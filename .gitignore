@@ -31,6 +31,6 @@ fp-info-cache
 *.csv
 
 # Backup files since we are using version controll
-**/baseline_project-backups/*.zip
-**/ECE319KStarter-backups/*.zip
+**/ECE319K_Starter-backups/*.zip
+**/ECE445L_Starter-backups/*.zip
 **/Lab6-backups/*.zip
