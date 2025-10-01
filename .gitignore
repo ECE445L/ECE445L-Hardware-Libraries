@@ -37,3 +37,5 @@ fp-info-cache
 **/ECE445L_Lab7-backups/*.zip
 **/ECE445L_RSLK_V2-backups/*.zip
 
+# Mac specific dump file
+*.DS_Store
