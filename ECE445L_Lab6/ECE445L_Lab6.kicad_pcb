@@ -1,7 +1,7 @@
 (kicad_pcb
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(general
 		(thickness 1.6)
 		(legacy_teardrops no)
@@ -15,34 +15,34 @@
 	)
 	(layers
 		(0 "F.Cu" signal)
-		(31 "B.Cu" signal)
-		(32 "B.Adhes" user "B.Adhesive")
-		(33 "F.Adhes" user "F.Adhesive")
-		(34 "B.Paste" user)
-		(35 "F.Paste" user)
-		(36 "B.SilkS" user "B.Silkscreen")
-		(37 "F.SilkS" user "F.Silkscreen")
-		(38 "B.Mask" user)
-		(39 "F.Mask" user)
-		(40 "Dwgs.User" user "User.Drawings")
-		(41 "Cmts.User" user "User.Comments")
-		(42 "Eco1.User" user "User.Eco1")
-		(43 "Eco2.User" user "User.Eco2")
-		(44 "Edge.Cuts" user)
-		(45 "Margin" user)
-		(46 "B.CrtYd" user "B.Courtyard")
-		(47 "F.CrtYd" user "F.Courtyard")
-		(48 "B.Fab" user)
-		(49 "F.Fab" user)
-		(50 "User.1" user)
-		(51 "User.2" user)
-		(52 "User.3" user)
-		(53 "User.4" user)
-		(54 "User.5" user)
-		(55 "User.6" user)
-		(56 "User.7" user)
-		(57 "User.8" user)
-		(58 "User.9" user)
+		(2 "B.Cu" signal)
+		(9 "F.Adhes" user "F.Adhesive")
+		(11 "B.Adhes" user "B.Adhesive")
+		(13 "F.Paste" user)
+		(15 "B.Paste" user)
+		(5 "F.SilkS" user "F.Silkscreen")
+		(7 "B.SilkS" user "B.Silkscreen")
+		(1 "F.Mask" user)
+		(3 "B.Mask" user)
+		(17 "Dwgs.User" user "User.Drawings")
+		(19 "Cmts.User" user "User.Comments")
+		(21 "Eco1.User" user "User.Eco1")
+		(23 "Eco2.User" user "User.Eco2")
+		(25 "Edge.Cuts" user)
+		(27 "Margin" user)
+		(31 "F.CrtYd" user "F.Courtyard")
+		(29 "B.CrtYd" user "B.Courtyard")
+		(35 "F.Fab" user)
+		(33 "B.Fab" user)
+		(39 "User.1" user)
+		(41 "User.2" user)
+		(43 "User.3" user)
+		(45 "User.4" user)
+		(47 "User.5" user)
+		(49 "User.6" user)
+		(51 "User.7" user)
+		(53 "User.8" user)
+		(55 "User.9" user)
 	)
 	(setup
 		(stackup
@@ -86,9 +86,10 @@
 		)
 		(pad_to_mask_clearance 0)
 		(allow_soldermask_bridges_in_footprints no)
+		(tenting front back)
 		(pcbplotparams
-			(layerselection 0x00010fc_ffffffff)
-			(plot_on_all_layers_selection 0x0000000_00000000)
+			(layerselection 0x00000000_00000000_55555555_5755f5ff)
+			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
 			(disableapertmacros no)
 			(usegerberextensions no)
 			(usegerberattributes yes)
@@ -98,7 +99,6 @@
 			(dashed_line_gap_ratio 3.000000)
 			(svgprecision 4)
 			(plotframeref no)
-			(viasonmask no)
 			(mode 1)
 			(useauxorigin no)
 			(hpglpennumber 1)
@@ -106,16 +106,19 @@
 			(hpglpendiameter 15.000000)
 			(pdf_front_fp_property_popups yes)
 			(pdf_back_fp_property_popups yes)
+			(pdf_metadata yes)
+			(pdf_single_document no)
 			(dxfpolygonmode yes)
 			(dxfimperialunits yes)
 			(dxfusepcbnewfont yes)
 			(psnegative no)
 			(psa4output no)
-			(plotreference yes)
-			(plotvalue yes)
-			(plotfptext yes)
-			(plotinvisibletext no)
+			(plot_black_and_white yes)
 			(sketchpadsonfab no)
+			(plotpadnumbers no)
+			(hidednponfab no)
+			(sketchdnponfab yes)
+			(crossoutdnponfab yes)
 			(subtractmaskfromsilk no)
 			(outputformat 1)
 			(mirror no)
@@ -198,6 +201,8 @@
 	(net 71 "unconnected-(H2-Hole-Pad1)")
 	(net 72 "unconnected-(H3-Hole-Pad1)")
 	(net 73 "unconnected-(H4-Hole-Pad1)")
+	(net 74 "unconnected-(R3-Pad2)")
+	(net 75 "unconnected-(R3-Pad1)")
 	(footprint "ECE445L:CP_Radial_Tantal200mil"
 		(layer "F.Cu")
 		(uuid "02b1b859-f54e-4fbe-8856-4ba62b7e0dc6")
@@ -226,19 +231,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ECE445L:CP_Radial_Tantal200mil"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "72ac1855-d6f9-4e04-afd4-5500e099de10")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -264,8 +257,8 @@
 		)
 		(property ki_fp_filters "CP_*")
 		(path "/14429751-ee50-4833-8bc1-6dd1c1f53b8d")
-		(sheetname "Root")
-		(sheetfile "Lab6.kicad_sch")
+		(sheetname "/")
+		(sheetfile "ECE445L_Lab6.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -0.839749 -1.755)
@@ -316,7 +309,7 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
 			(uuid "86322898-e7e3-444d-8276-cb3d2c20e869")
 		)
@@ -347,7 +340,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "ee2ed8b6-7b1e-4fa5-8c5f-dd890fb1ee05")
 		)
@@ -382,6 +375,7 @@
 			(pintype "passive")
 			(uuid "ce9f7bed-ff17-4af3-b622-ef2eb890701e")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Capacitor_THT.3dshapes/CP_Radial_Tantal_D6.0mm_P5.00mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -422,19 +416,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ECE445L:C_Axial_200mil"
-			(at 0 0 180)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "a4f07f51-5bb1-4bf2-961b-e36d3bad5afc")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -460,8 +442,8 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/01e1611c-e9e3-4c6b-b630-8acb3a158699")
-		(sheetname "Root")
-		(sheetfile "Lab6.kicad_sch")
+		(sheetname "/")
+		(sheetfile "ECE445L_Lab6.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 3.81 1.27)
@@ -665,6 +647,7 @@
 			(pintype "passive")
 			(uuid "cb140eb7-363a-4188-87e5-953d563237ad")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Axial_L5.1mm_D3.1mm_P15.00mm_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -705,19 +688,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ECE445L:PinHeader_1x02_P2.54mm_Vertical"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "10c35b44-fc4b-4f2f-824f-d283123037ac")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -743,8 +714,8 @@
 		)
 		(property ki_fp_filters "Jumper* TestPoint*2Pads* TestPoint*Bridge*")
 		(path "/580848c3-9ca9-4213-acce-d4299c461520")
-		(sheetname "Root")
-		(sheetfile "Lab6.kicad_sch")
+		(sheetname "/")
+		(sheetfile "ECE445L_Lab6.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -1.33 -1.33)
@@ -929,6 +900,7 @@
 			(pintype "passive")
 			(uuid "6d5adab3-51e2-4339-8431-be2cd13c71c6")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -969,18 +941,6 @@
 				)
 			)
 		)
-		(property "Footprint" "ECE445L:LED_D5.0mm"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "1c9c6781-5940-4898-99e6-cc7ff7a79858")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" "https://users.ece.utexas.edu/~valvano/mspm0/HLMP-4700.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
@@ -1007,8 +967,8 @@
 		)
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/39ed690e-42e2-42f9-9bd7-f7e8a98c3e87")
-		(sheetname "Root")
-		(sheetfile "Lab6.kicad_sch")
+		(sheetname "/")
+		(sheetfile "ECE445L_Lab6.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -1.29 -1.545)
@@ -1049,7 +1009,7 @@
 				(width 0.12)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "85fcc654-1494-4c2d-a25f-138ecc76cc8a")
 		)
@@ -1121,7 +1081,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "88551198-7509-42a4-9f71-bac5a3cca74c")
 		)
@@ -1158,6 +1118,7 @@
 			(pintype "passive")
 			(uuid "211efd5f-ad33-4f2e-bc1e-dd1bc341880a")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/LED_THT.3dshapes/LED_D5.0mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -1198,19 +1159,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ECE445L:CP_Radial_Tantal200mil"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "8242971e-7028-4376-8bef-a215ed74a8ff")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -1236,8 +1185,8 @@
 		)
 		(property ki_fp_filters "CP_*")
 		(path "/bbeb6d92-ddc8-4696-9596-863c08722564")
-		(sheetname "Root")
-		(sheetfile "Lab6.kicad_sch")
+		(sheetname "/")
+		(sheetfile "ECE445L_Lab6.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -0.839749 -1.755)
@@ -1288,7 +1237,7 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
 			(uuid "7a473729-167b-4461-b125-134380477eba")
 		)
@@ -1319,7 +1268,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "5397805b-19c1-42d8-a8e4-c9c22056b398")
 		)
@@ -1354,6 +1303,7 @@
 			(pintype "passive")
 			(uuid "5c504309-467c-4bd2-a0ff-c1708cb53d6a")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Capacitor_THT.3dshapes/CP_Radial_Tantal_D6.0mm_P5.00mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -1394,19 +1344,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "c6ebef39-d23b-47b8-99f6-ca9dff35c0c5")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -1431,8 +1369,8 @@
 			)
 		)
 		(path "/2fdb1009-ec9e-4acb-b338-1504ad298543")
-		(sheetname "Root")
-		(sheetfile "Lab6.kicad_sch")
+		(sheetname "/")
+		(sheetfile "ECE445L_Lab6.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -0.25 1.5)
@@ -1651,7 +1589,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "4629ca6e-9b4c-42c8-bdbf-b4025c1014e0")
 		)
@@ -1710,6 +1648,7 @@
 			(pintype "passive")
 			(uuid "3360d362-5b41-4436-a59f-a4b72e92d775")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Button_Switch_THT.3dshapes/SW_PUSH_6mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -1750,19 +1689,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ECE445L:C_Axial_200mil"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "54775a56-26bb-4d3a-9b1d-68600199305d")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -1788,8 +1715,8 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/f1809b2c-6598-49e8-b3cb-24bd8981aa8f")
-		(sheetname "Root")
-		(sheetfile "Lab6.kicad_sch")
+		(sheetname "/")
+		(sheetfile "ECE445L_Lab6.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 1.27 -1.27)
@@ -1993,6 +1920,7 @@
 			(pintype "passive")
 			(uuid "c58b93a6-7696-4443-9edc-c0b841db6cf0")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Axial_L5.1mm_D3.1mm_P15.00mm_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -2033,20 +1961,8 @@
 				)
 			)
 		)
-		(property "Footprint" "ECE445L:C_Axial_200mil"
-			(at 0 0 -90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "e9da62df-7d1f-4ae0-a46d-7292fcdd008f")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 -90)
+		(property "Datasheet" "~"
+			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "dae702fa-cd97-4a88-9990-13d021479ee6")
@@ -2058,7 +1974,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "88638395-68b2-4a8a-8575-9442bd99bfe2")
@@ -2071,8 +1987,8 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/94886bb8-89ee-40a2-a693-166c42f4c975")
-		(sheetname "Root")
-		(sheetfile "Lab6.kicad_sch")
+		(sheetname "/")
+		(sheetfile "ECE445L_Lab6.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 1.27 1.27)
@@ -2276,6 +2192,7 @@
 			(pintype "passive")
 			(uuid "5b7b2210-ebdf-4bfa-824f-a81356b0dc3a")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Axial_L5.1mm_D3.1mm_P15.00mm_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -2316,20 +2233,8 @@
 				)
 			)
 		)
-		(property "Footprint" "ECE445L:C_Axial_200mil"
-			(at 0 0 -90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "2395ddc5-d222-4d31-b2a7-d303238dc514")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 -90)
+		(property "Datasheet" "~"
+			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "b0cf2ec9-538b-4bb2-a290-e7fff3dcf147")
@@ -2341,7 +2246,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "907617ca-c358-4176-a695-5d3ecf42776a")
@@ -2354,8 +2259,8 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/326f62ce-1b19-4e59-8012-42208b4584d7")
-		(sheetname "Root")
-		(sheetfile "Lab6.kicad_sch")
+		(sheetname "/")
+		(sheetfile "ECE445L_Lab6.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 1.27 1.27)
@@ -2559,6 +2464,7 @@
 			(pintype "passive")
 			(uuid "3f0c87d3-0179-41ba-8047-20460533b1bd")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Axial_L5.1mm_D3.1mm_P15.00mm_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -2599,19 +2505,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ECE445L:C_Axial_200mil"
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "f40e1548-eef1-4e12-8577-1fd1bcaed470")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -2637,8 +2531,8 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/0c03e832-0848-4ebc-9160-9879a8fcda2f")
-		(sheetname "Root")
-		(sheetfile "Lab6.kicad_sch")
+		(sheetname "/")
+		(sheetfile "ECE445L_Lab6.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 3.81 -1.27)
@@ -2842,6 +2736,7 @@
 			(pintype "passive")
 			(uuid "e7518c6c-d9aa-4a80-b411-efe2ae665764")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Axial_L5.1mm_D3.1mm_P15.00mm_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -2880,18 +2775,6 @@
 				(font
 					(size 1.27 1.27)
 					(thickness 0.254)
-				)
-			)
-		)
-		(property "Footprint" "ECE445L:TL431CLPM"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "959198a7-916c-4dc8-84ff-32a8d994e28c")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
 				)
 			)
 		)
@@ -2980,8 +2863,8 @@
 			)
 		)
 		(path "/66a21d86-8212-4710-a22a-978621b655bc")
-		(sheetname "Root")
-		(sheetfile "Lab6.kicad_sch")
+		(sheetname "/")
+		(sheetfile "ECE445L_Lab6.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -1.809 -0.005)
@@ -3210,6 +3093,7 @@
 			(pintype "power_in")
 			(uuid "1411a24c-feeb-47ec-bc0f-265fe070ffc4")
 		)
+		(embedded_fonts no)
 		(model "LP2950-33LPRE3.stp"
 			(offset
 				(xyz -1.269999962 0.2499999962 7.499999887)
@@ -3250,18 +3134,6 @@
 				)
 			)
 		)
-		(property "Footprint" "ECE445L:MountingHole_4_40"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "728cf270-e583-488b-a986-af1a48e1eabb")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
@@ -3287,8 +3159,8 @@
 			)
 		)
 		(path "/80a9d2a6-87f9-4a42-a2d9-1aa7046db7b9")
-		(sheetname "Root")
-		(sheetfile "Lab6.kicad_sch")
+		(sheetname "/")
+		(sheetfile "ECE445L_Lab6.kicad_sch")
 		(attr exclude_from_pos_files)
 		(fp_circle
 			(center 0 0)
@@ -3297,7 +3169,7 @@
 				(width 0.15)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "Cmts.User")
 			(uuid "f3066108-5e90-4761-8f12-8c5154c267fb")
 		)
@@ -3308,7 +3180,7 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
 			(uuid "3e70a8c0-c7fc-4669-a80d-9dcd9a40a1fb")
 		)
@@ -3331,8 +3203,270 @@
 			(remove_unused_layers no)
 			(net 70 "unconnected-(H1-Hole-Pad1)")
 			(pinfunction "Hole")
-			(pintype "power_in")
+			(pintype "power_in+no_connect")
 			(uuid "cf90e360-adea-4171-b181-cd8a7905809c")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "ECE445L:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
+		(layer "F.Cu")
+		(uuid "5119a73a-9354-4065-bb64-32f5bb0c0439")
+		(at 124.079 50.927)
+		(descr "Resistor, Axial_DIN0204 series, Axial, Horizontal, pin pitch=7.62mm, 0.167W, length*diameter=3.6*1.6mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
+		(tags "Resistor Axial_DIN0204 series Axial Horizontal pin pitch 7.62mm 0.167W length 3.6mm diameter 1.6mm")
+		(property "Reference" "R3"
+			(at 3.81 -1.92 0)
+			(layer "F.SilkS")
+			(uuid "647ed367-f06d-489c-9fa8-b24f9a2d3935")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 3.81 1.92 0)
+			(layer "F.Fab")
+			(uuid "25b2383d-bc38-4bef-8fdd-35b86249a67d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "https://users.ece.utexas.edu/~valvano/mspm0/CarbonFilmresistors.pdf"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "db8ff82f-eba5-41e3-840a-506d62552236")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bbddb6b2-4ee5-486d-8398-762061d31a5b")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "R_*")
+		(path "/cc9fc9aa-e4b7-412b-ad52-360d2cc580a4")
+		(sheetname "/")
+		(sheetfile "ECE445L_Lab6.kicad_sch")
+		(attr through_hole)
+		(fp_line
+			(start 0.94 0)
+			(end 1.89 0)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "8bc8470e-e546-44ab-b417-a67ac6c5f0ff")
+		)
+		(fp_line
+			(start 1.89 -0.92)
+			(end 1.89 0.92)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "8dfbdbd3-7c5a-4ea3-80de-99479df36b92")
+		)
+		(fp_line
+			(start 1.89 0.92)
+			(end 5.73 0.92)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "37a97a34-d071-4201-bec5-418f70c2371c")
+		)
+		(fp_line
+			(start 5.73 -0.92)
+			(end 1.89 -0.92)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "4027fc8d-6a17-4d88-bb5a-aa29b13adf47")
+		)
+		(fp_line
+			(start 5.73 0.92)
+			(end 5.73 -0.92)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "b41cb072-3baa-481e-aa5f-d12e30459c5f")
+		)
+		(fp_line
+			(start 6.68 0)
+			(end 5.73 0)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "0f42d65e-46ab-4bed-855d-ca6f87276b7d")
+		)
+		(fp_line
+			(start -0.95 -1.05)
+			(end -0.95 1.05)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "509531d0-dfdb-49ff-927a-ac987f5f612d")
+		)
+		(fp_line
+			(start -0.95 1.05)
+			(end 8.57 1.05)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "c1323a60-e296-4b9f-be99-9227f2304d84")
+		)
+		(fp_line
+			(start 8.57 -1.05)
+			(end -0.95 -1.05)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "60386682-747f-4649-b90f-3e6f22245c39")
+		)
+		(fp_line
+			(start 8.57 1.05)
+			(end 8.57 -1.05)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "7aade187-31a5-4a61-bde3-6ae9447d7968")
+		)
+		(fp_line
+			(start 0 0)
+			(end 2.01 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "faf14191-3c68-4468-98d6-80ebe6bd89b6")
+		)
+		(fp_line
+			(start 2.01 -0.8)
+			(end 2.01 0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "73a0cfc8-5435-4f6a-9939-aacd28daf907")
+		)
+		(fp_line
+			(start 2.01 0.8)
+			(end 5.61 0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "f44eaa35-9d8d-4240-b64f-dda2ebb157f6")
+		)
+		(fp_line
+			(start 5.61 -0.8)
+			(end 2.01 -0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "4c810ff3-f00d-4810-88ff-a2c78885b479")
+		)
+		(fp_line
+			(start 5.61 0.8)
+			(end 5.61 -0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "525d3592-62f8-4ce0-af5b-76f1073ef850")
+		)
+		(fp_line
+			(start 7.62 0)
+			(end 5.61 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "988de7ee-0f45-4d19-9f55-5e09ad968c72")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 3.81 0 0)
+			(layer "F.Fab")
+			(uuid "b3e707fb-5817-40dd-b307-ceb7d7a50c57")
+			(effects
+				(font
+					(size 0.72 0.72)
+					(thickness 0.108)
+				)
+			)
+		)
+		(pad "1" thru_hole circle
+			(at 0 0)
+			(size 1.4 1.4)
+			(drill 0.7)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 75 "unconnected-(R3-Pad1)")
+			(pintype "passive")
+			(uuid "92220a69-c170-4698-a9a5-92dc452835bd")
+		)
+		(pad "2" thru_hole oval
+			(at 7.62 0)
+			(size 1.4 1.4)
+			(drill 0.7)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 74 "unconnected-(R3-Pad2)")
+			(pintype "passive")
+			(uuid "0c9ba97a-ea32-4ad4-ba9d-3ec58950d461")
+		)
+		(embedded_fonts no)
+		(model "${KICAD6_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
 		)
 	)
 	(footprint "Button_Switch_THT:SW_PUSH_6mm"
@@ -3363,20 +3497,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
-			(at 0 0 -90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "29adea6e-a705-4835-8f87-8d683a655ff5")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 -90)
+		(property "Datasheet" "~"
+			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "c3381015-a309-4b1c-9182-b4727a371c76")
@@ -3388,7 +3510,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "710ec377-b792-45bc-a07e-3921fa967320")
@@ -3400,8 +3522,8 @@
 			)
 		)
 		(path "/42a5ffbb-0801-40a2-a075-e2eb82e466e3")
-		(sheetname "Root")
-		(sheetfile "Lab6.kicad_sch")
+		(sheetname "/")
+		(sheetfile "ECE445L_Lab6.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 1 5.5)
@@ -3620,7 +3742,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "dcfaff04-4efe-44d9-b144-f1e9d9f68a7f")
 		)
@@ -3679,6 +3801,7 @@
 			(pintype "passive")
 			(uuid "e3018154-de70-420b-87f9-c2a0835888ed")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Button_Switch_THT.3dshapes/SW_PUSH_6mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -3720,18 +3843,6 @@
 				)
 			)
 		)
-		(property "Footprint" "ECE445L:LED_D5.0mm"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "ce450234-cfbf-43f9-8482-de024d10f0f8")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" "https://users.ece.utexas.edu/~valvano/mspm0/HLMP-4700.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
@@ -3757,7 +3868,6 @@
 			)
 		)
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
-		(path "/207d2b64-8208-49dd-88c1-95e849ea307d")
 		(sheetname "Root")
 		(sheetfile "Lab6.kicad_sch")
 		(attr through_hole)
@@ -3800,7 +3910,7 @@
 				(width 0.12)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "a1fbaa7a-a632-4773-98c1-60fb680c9e73")
 		)
@@ -3872,7 +3982,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "07bef72b-029a-4377-b8e3-bba6a5a5b892")
 		)
@@ -3909,6 +4019,7 @@
 			(pintype "passive")
 			(uuid "9baf80fb-0510-4f17-8bbe-521802e4cd01")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/LED_THT.3dshapes/LED_D5.0mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -3949,19 +4060,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ECE445L:Testpoint_1x02_P2.54mm"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "8e0ac294-4abe-4022-afa7-c11c96d6b9e0")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -3987,8 +4086,8 @@
 		)
 		(property ki_fp_filters "Jumper* TestPoint*2Pads* TestPoint*Bridge*")
 		(path "/97926e9a-850f-4e74-afcb-2728d86f80b8")
-		(sheetname "Root")
-		(sheetfile "Lab6.kicad_sch")
+		(sheetname "/")
+		(sheetfile "ECE445L_Lab6.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -1.8 -1.8)
@@ -4103,6 +4202,7 @@
 			(pintype "passive")
 			(uuid "710863c7-d848-4de7-8093-32b0a3c60d1d")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -4143,19 +4243,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ECE445L:C_Axial_200mil"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "a2a1eef8-c7f4-4153-bcca-34396d51cc2a")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -4181,8 +4269,8 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/4f1f2ba0-879a-4b17-9cb8-596b89de9ea6")
-		(sheetname "Root")
-		(sheetfile "Lab6.kicad_sch")
+		(sheetname "/")
+		(sheetfile "ECE445L_Lab6.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 1.27 -1.27)
@@ -4386,6 +4474,7 @@
 			(pintype "passive")
 			(uuid "36e53c43-2392-4b51-a1e0-699506acaa0c")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Axial_L5.1mm_D3.1mm_P15.00mm_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -4426,19 +4515,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ECE445L:PinHeader_1x05_P2.54mm_Vertical"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "ca0e455a-5159-43be-bfc1-54922a14f49a")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -4464,8 +4541,8 @@
 		)
 		(property ki_fp_filters "Jumper* TestPoint*2Pads* TestPoint*Bridge*")
 		(path "/a8bc5f47-e77d-4551-a79c-65a87e5a7978")
-		(sheetname "Root")
-		(sheetfile "Lab6.kicad_sch")
+		(sheetname "/")
+		(sheetfile "ECE445L_Lab6.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -1.33 -1.27)
@@ -4647,7 +4724,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 28 "/TDI")
+			(net 29 "/TDO")
 			(pinfunction "C")
 			(pintype "passive")
 			(uuid "66018549-2cff-42e6-84a3-2894432fbb5c")
@@ -4658,11 +4735,12 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 29 "/TDO")
+			(net 28 "/TDI")
 			(pinfunction "C")
 			(pintype "passive")
 			(uuid "8cb4d6f1-3d95-468d-a4a8-0132e2869663")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x04_P2.54mm_Vertical.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -4701,18 +4779,6 @@
 				(font
 					(size 1.27 1.27)
 					(thickness 0.254)
-				)
-			)
-		)
-		(property "Footprint" "ECE445L:QFP50P1200X1200X160-64N"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "1c8d84b9-987b-47d9-9327-dd401b0f722e")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
 				)
 			)
 		)
@@ -4801,8 +4867,8 @@
 			)
 		)
 		(path "/e1bccc9a-8ae2-40a6-8782-51b68ac4e3d0")
-		(sheetname "Root")
-		(sheetfile "Lab6.kicad_sch")
+		(sheetname "/")
+		(sheetfile "ECE445L_Lab6.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -4.65 -4.65)
@@ -4851,7 +4917,7 @@
 				(width 0.25)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "e6be5449-f53b-418c-9e69-e52585cbb70e")
 		)
@@ -4959,7 +5025,7 @@
 		(pad "1" smd rect
 			(at -5.738 -3.75 90)
 			(size 0.3 1.475)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 32 "PB6")
 			(pinfunction "PB6")
 			(pintype "passive")
@@ -4968,7 +5034,7 @@
 		(pad "2" smd rect
 			(at -5.738 -3.25 90)
 			(size 0.3 1.475)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 4 "+3V3")
 			(pinfunction "VDDA")
 			(pintype "passive")
@@ -4977,7 +5043,7 @@
 		(pad "3" smd rect
 			(at -5.738 -2.75 90)
 			(size 0.3 1.475)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 2 "GND")
 			(pinfunction "GNDA")
 			(pintype "passive")
@@ -4986,7 +5052,7 @@
 		(pad "4" smd rect
 			(at -5.738 -2.25 90)
 			(size 0.3 1.475)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 33 "PB7")
 			(pinfunction "PB7")
 			(pintype "passive")
@@ -4995,7 +5061,7 @@
 		(pad "5" smd rect
 			(at -5.738 -1.75 90)
 			(size 0.3 1.475)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 34 "PF4")
 			(pinfunction "PF4")
 			(pintype "passive")
@@ -5004,7 +5070,7 @@
 		(pad "6" smd rect
 			(at -5.738 -1.25 90)
 			(size 0.3 1.475)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 35 "PE3")
 			(pinfunction "PE3")
 			(pintype "passive")
@@ -5013,7 +5079,7 @@
 		(pad "7" smd rect
 			(at -5.738 -0.75 90)
 			(size 0.3 1.475)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 36 "PE2")
 			(pinfunction "PE2")
 			(pintype "passive")
@@ -5022,7 +5088,7 @@
 		(pad "8" smd rect
 			(at -5.738 -0.25 90)
 			(size 0.3 1.475)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 37 "PE1")
 			(pinfunction "PE1")
 			(pintype "passive")
@@ -5031,7 +5097,7 @@
 		(pad "9" smd rect
 			(at -5.738 0.25 90)
 			(size 0.3 1.475)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 38 "PE0")
 			(pinfunction "PE0")
 			(pintype "passive")
@@ -5040,7 +5106,7 @@
 		(pad "10" smd rect
 			(at -5.738 0.75 90)
 			(size 0.3 1.475)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 39 "PD7")
 			(pinfunction "PD7")
 			(pintype "passive")
@@ -5049,7 +5115,7 @@
 		(pad "11" smd rect
 			(at -5.738 1.25 90)
 			(size 0.3 1.475)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 4 "+3V3")
 			(pinfunction "VDD_1")
 			(pintype "passive")
@@ -5058,7 +5124,7 @@
 		(pad "12" smd rect
 			(at -5.738 1.75 90)
 			(size 0.3 1.475)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 2 "GND")
 			(pinfunction "GND_1")
 			(pintype "passive")
@@ -5067,7 +5133,7 @@
 		(pad "13" smd rect
 			(at -5.738 2.25 90)
 			(size 0.3 1.475)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 40 "PC7")
 			(pinfunction "PC7")
 			(pintype "passive")
@@ -5076,7 +5142,7 @@
 		(pad "14" smd rect
 			(at -5.738 2.75 90)
 			(size 0.3 1.475)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 41 "PC6")
 			(pinfunction "PC6")
 			(pintype "passive")
@@ -5085,7 +5151,7 @@
 		(pad "15" smd rect
 			(at -5.738 3.25 90)
 			(size 0.3 1.475)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 42 "PC5")
 			(pinfunction "PC5")
 			(pintype "passive")
@@ -5094,7 +5160,7 @@
 		(pad "16" smd rect
 			(at -5.738 3.75 90)
 			(size 0.3 1.475)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 43 "PC4")
 			(pinfunction "PC4")
 			(pintype "passive")
@@ -5103,7 +5169,7 @@
 		(pad "17" smd rect
 			(at -3.75 5.738)
 			(size 0.3 1.475)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 44 "PA0")
 			(pinfunction "PA0/U0RX")
 			(pintype "passive")
@@ -5112,7 +5178,7 @@
 		(pad "18" smd rect
 			(at -3.25 5.738)
 			(size 0.3 1.475)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 45 "PA1")
 			(pinfunction "PA1/U0TX")
 			(pintype "passive")
@@ -5121,7 +5187,7 @@
 		(pad "19" smd rect
 			(at -2.75 5.738)
 			(size 0.3 1.475)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 46 "PA2")
 			(pinfunction "PA2/SSI0C1K")
 			(pintype "passive")
@@ -5130,7 +5196,7 @@
 		(pad "20" smd rect
 			(at -2.25 5.738)
 			(size 0.3 1.475)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 47 "PA3")
 			(pinfunction "PA3/SSI0FSS")
 			(pintype "passive")
@@ -5139,7 +5205,7 @@
 		(pad "21" smd rect
 			(at -1.75 5.738)
 			(size 0.3 1.475)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 48 "PA4")
 			(pinfunction "PA4/SSI0RX")
 			(pintype "passive")
@@ -5148,7 +5214,7 @@
 		(pad "22" smd rect
 			(at -1.25 5.738)
 			(size 0.3 1.475)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 49 "PA5")
 			(pinfunction "PA5/SSI0TX")
 			(pintype "passive")
@@ -5157,7 +5223,7 @@
 		(pad "23" smd rect
 			(at -0.75 5.738)
 			(size 0.3 1.475)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 50 "PA6")
 			(pinfunction "PA6")
 			(pintype "passive")
@@ -5166,7 +5232,7 @@
 		(pad "24" smd rect
 			(at -0.25 5.738)
 			(size 0.3 1.475)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 51 "PA7")
 			(pinfunction "PA7")
 			(pintype "passive")
@@ -5175,7 +5241,7 @@
 		(pad "25" smd rect
 			(at 0.25 5.738)
 			(size 0.3 1.475)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 5 "/LDO")
 			(pinfunction "VDDC_1")
 			(pintype "passive")
@@ -5184,7 +5250,7 @@
 		(pad "26" smd rect
 			(at 0.75 5.738)
 			(size 0.3 1.475)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 4 "+3V3")
 			(pinfunction "VDD_2")
 			(pintype "passive")
@@ -5193,7 +5259,7 @@
 		(pad "27" smd rect
 			(at 1.25 5.738)
 			(size 0.3 1.475)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 2 "GND")
 			(pinfunction "GND_2")
 			(pintype "passive")
@@ -5202,7 +5268,7 @@
 		(pad "28" smd rect
 			(at 1.75 5.738)
 			(size 0.3 1.475)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 52 "PF0")
 			(pinfunction "PF0")
 			(pintype "passive")
@@ -5211,7 +5277,7 @@
 		(pad "29" smd rect
 			(at 2.25 5.738)
 			(size 0.3 1.475)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 53 "PF1")
 			(pinfunction "PF1")
 			(pintype "passive")
@@ -5220,7 +5286,7 @@
 		(pad "30" smd rect
 			(at 2.75 5.738)
 			(size 0.3 1.475)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 54 "PF2")
 			(pinfunction "PF2")
 			(pintype "passive")
@@ -5229,7 +5295,7 @@
 		(pad "31" smd rect
 			(at 3.25 5.738)
 			(size 0.3 1.475)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 55 "PF3")
 			(pinfunction "PF3")
 			(pintype "passive")
@@ -5238,7 +5304,7 @@
 		(pad "32" smd rect
 			(at 3.75 5.738)
 			(size 0.3 1.475)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 6 "Net-(U1-~{WAKE})")
 			(pinfunction "~{WAKE}")
 			(pintype "passive")
@@ -5247,16 +5313,16 @@
 		(pad "33" smd rect
 			(at 5.738 3.75 90)
 			(size 0.3 1.475)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 8 "unconnected-(U1-~{HIB}-Pad33)")
 			(pinfunction "~{HIB}")
-			(pintype "passive")
+			(pintype "passive+no_connect")
 			(uuid "b3113628-d505-46ef-99a9-39c5954e7a3f")
 		)
 		(pad "34" smd rect
 			(at 5.738 3.25 90)
 			(size 0.3 1.475)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 2 "GND")
 			(pinfunction "XOSC0")
 			(pintype "passive")
@@ -5265,7 +5331,7 @@
 		(pad "35" smd rect
 			(at 5.738 2.75 90)
 			(size 0.3 1.475)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 2 "GND")
 			(pinfunction "GNDX")
 			(pintype "passive")
@@ -5274,16 +5340,16 @@
 		(pad "36" smd rect
 			(at 5.738 2.25 90)
 			(size 0.3 1.475)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 9 "unconnected-(U1-XOSC1-Pad36)")
 			(pinfunction "XOSC1")
-			(pintype "passive")
+			(pintype "passive+no_connect")
 			(uuid "b285d66c-652f-461e-9312-24f6b531b60b")
 		)
 		(pad "37" smd rect
 			(at 5.738 1.75 90)
 			(size 0.3 1.475)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 4 "+3V3")
 			(pinfunction "VBAT")
 			(pintype "passive")
@@ -5292,7 +5358,7 @@
 		(pad "38" smd rect
 			(at 5.738 1.25 90)
 			(size 0.3 1.475)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 7 "/Reset")
 			(pinfunction "~{RST}")
 			(pintype "passive")
@@ -5301,7 +5367,7 @@
 		(pad "39" smd rect
 			(at 5.738 0.75 90)
 			(size 0.3 1.475)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 2 "GND")
 			(pinfunction "GND_3")
 			(pintype "passive")
@@ -5310,7 +5376,7 @@
 		(pad "40" smd rect
 			(at 5.738 0.25 90)
 			(size 0.3 1.475)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 3 "/OSC2")
 			(pinfunction "OSC0")
 			(pintype "passive")
@@ -5319,7 +5385,7 @@
 		(pad "41" smd rect
 			(at 5.738 -0.25 90)
 			(size 0.3 1.475)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 1 "/OSC1")
 			(pinfunction "OSC1")
 			(pintype "passive")
@@ -5328,7 +5394,7 @@
 		(pad "42" smd rect
 			(at 5.738 -0.75 90)
 			(size 0.3 1.475)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 4 "+3V3")
 			(pinfunction "VDD_3")
 			(pintype "passive")
@@ -5337,7 +5403,7 @@
 		(pad "43" smd rect
 			(at 5.738 -1.25 90)
 			(size 0.3 1.475)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 56 "PD4")
 			(pinfunction "PD4")
 			(pintype "passive")
@@ -5346,7 +5412,7 @@
 		(pad "44" smd rect
 			(at 5.738 -1.75 90)
 			(size 0.3 1.475)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 57 "PD5")
 			(pinfunction "PD5")
 			(pintype "passive")
@@ -5355,7 +5421,7 @@
 		(pad "45" smd rect
 			(at 5.738 -2.25 90)
 			(size 0.3 1.475)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 58 "PB0")
 			(pinfunction "PB0/USB0ID")
 			(pintype "passive")
@@ -5364,7 +5430,7 @@
 		(pad "46" smd rect
 			(at 5.738 -2.75 90)
 			(size 0.3 1.475)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 59 "PB1")
 			(pinfunction "PB1/USB0VBUS")
 			(pintype "passive")
@@ -5373,7 +5439,7 @@
 		(pad "47" smd rect
 			(at 5.738 -3.25 90)
 			(size 0.3 1.475)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 60 "PB2")
 			(pinfunction "PB2/I2C0SCL")
 			(pintype "passive")
@@ -5382,7 +5448,7 @@
 		(pad "48" smd rect
 			(at 5.738 -3.75 90)
 			(size 0.3 1.475)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 61 "PB3")
 			(pinfunction "PB3/I2C0SDA")
 			(pintype "passive")
@@ -5391,7 +5457,7 @@
 		(pad "49" smd rect
 			(at 3.75 -5.738)
 			(size 0.3 1.475)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 29 "/TDO")
 			(pinfunction "PC3/TDO/SWO")
 			(pintype "passive")
@@ -5400,7 +5466,7 @@
 		(pad "50" smd rect
 			(at 3.25 -5.738)
 			(size 0.3 1.475)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 28 "/TDI")
 			(pinfunction "PC2/TDI")
 			(pintype "passive")
@@ -5409,7 +5475,7 @@
 		(pad "51" smd rect
 			(at 2.75 -5.738)
 			(size 0.3 1.475)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 27 "/TMS")
 			(pinfunction "PC1/TMS/SWDIO")
 			(pintype "passive")
@@ -5418,7 +5484,7 @@
 		(pad "52" smd rect
 			(at 2.25 -5.738)
 			(size 0.3 1.475)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 22 "/TCK")
 			(pinfunction "PC0/TCK/SWCLK")
 			(pintype "passive")
@@ -5427,7 +5493,7 @@
 		(pad "53" smd rect
 			(at 1.75 -5.738)
 			(size 0.3 1.475)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 10 "PD6")
 			(pinfunction "PD6")
 			(pintype "passive")
@@ -5436,7 +5502,7 @@
 		(pad "54" smd rect
 			(at 1.25 -5.738)
 			(size 0.3 1.475)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 4 "+3V3")
 			(pinfunction "VDD_4")
 			(pintype "passive")
@@ -5445,7 +5511,7 @@
 		(pad "55" smd rect
 			(at 0.75 -5.738)
 			(size 0.3 1.475)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 2 "GND")
 			(pinfunction "GND_4")
 			(pintype "passive")
@@ -5454,7 +5520,7 @@
 		(pad "56" smd rect
 			(at 0.25 -5.738)
 			(size 0.3 1.475)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 5 "/LDO")
 			(pinfunction "VDDC_2")
 			(pintype "passive")
@@ -5463,7 +5529,7 @@
 		(pad "57" smd rect
 			(at -0.25 -5.738)
 			(size 0.3 1.475)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 62 "PB5")
 			(pinfunction "PB5")
 			(pintype "passive")
@@ -5472,7 +5538,7 @@
 		(pad "58" smd rect
 			(at -0.75 -5.738)
 			(size 0.3 1.475)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 63 "PB4")
 			(pinfunction "PB4")
 			(pintype "passive")
@@ -5481,7 +5547,7 @@
 		(pad "59" smd rect
 			(at -1.25 -5.738)
 			(size 0.3 1.475)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 64 "PE4")
 			(pinfunction "PE4")
 			(pintype "passive")
@@ -5490,7 +5556,7 @@
 		(pad "60" smd rect
 			(at -1.75 -5.738)
 			(size 0.3 1.475)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 65 "PE5")
 			(pinfunction "PE5")
 			(pintype "passive")
@@ -5499,7 +5565,7 @@
 		(pad "61" smd rect
 			(at -2.25 -5.738)
 			(size 0.3 1.475)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 66 "PD0")
 			(pinfunction "PD0")
 			(pintype "passive")
@@ -5508,7 +5574,7 @@
 		(pad "62" smd rect
 			(at -2.75 -5.738)
 			(size 0.3 1.475)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 67 "PD1")
 			(pinfunction "PD1")
 			(pintype "passive")
@@ -5517,7 +5583,7 @@
 		(pad "63" smd rect
 			(at -3.25 -5.738)
 			(size 0.3 1.475)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 68 "PD2")
 			(pinfunction "PD2")
 			(pintype "passive")
@@ -5526,12 +5592,13 @@
 		(pad "64" smd rect
 			(at -3.75 -5.738)
 			(size 0.3 1.475)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 69 "PD3")
 			(pinfunction "PD3")
 			(pintype "passive")
 			(uuid "e853166a-d76c-4c52-aa3b-27e37928d3d0")
 		)
+		(embedded_fonts no)
 		(model "TM4C123GH6PMIR.stp"
 			(offset
 				(xyz 0 0 0)
@@ -5572,18 +5639,6 @@
 				)
 			)
 		)
-		(property "Footprint" "ECE445L:MountingHole_4_40"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "783f05bb-d3b7-4813-96bf-e1427c3bff41")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
@@ -5609,8 +5664,8 @@
 			)
 		)
 		(path "/e687ac88-985d-41ec-8d38-c5487c4fe8ce")
-		(sheetname "Root")
-		(sheetfile "Lab6.kicad_sch")
+		(sheetname "/")
+		(sheetfile "ECE445L_Lab6.kicad_sch")
 		(attr exclude_from_pos_files)
 		(fp_circle
 			(center 0 0)
@@ -5619,7 +5674,7 @@
 				(width 0.15)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "Cmts.User")
 			(uuid "bb0b3676-d8b1-4ddf-8467-b5d8fb7cf6ef")
 		)
@@ -5630,7 +5685,7 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
 			(uuid "58fd4e44-1be4-4c5c-95ff-fb8deda20667")
 		)
@@ -5653,9 +5708,10 @@
 			(remove_unused_layers no)
 			(net 73 "unconnected-(H4-Hole-Pad1)")
 			(pinfunction "Hole")
-			(pintype "power_in")
+			(pintype "power_in+no_connect")
 			(uuid "873c2158-fe55-44de-9481-66b330d9238b")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "ECE445L:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
 		(layer "F.Cu")
@@ -5685,20 +5741,8 @@
 				)
 			)
 		)
-		(property "Footprint" "ECE445L:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
-			(at 0 0 -90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "d0c620f8-3822-4ad5-90f7-a39f26a49e32")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" "https://users.ece.utexas.edu/~valvano/mspm0/CarbonFilmresistors.pdf"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "c88c2704-b327-4934-a813-60ea958936a9")
@@ -5710,7 +5754,7 @@
 			)
 		)
 		(property "Description" "Resistor, small US symbol"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "96251870-73ab-40d8-baa7-cae113cd4d64")
@@ -5723,8 +5767,8 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/148bfe90-5924-4c2b-9d89-ac27fb4e2674")
-		(sheetname "Root")
-		(sheetfile "Lab6.kicad_sch")
+		(sheetname "/")
+		(sheetfile "ECE445L_Lab6.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 1.89 0.92)
@@ -5917,6 +5961,7 @@
 			(pintype "passive")
 			(uuid "4506f22f-53c2-430f-bdfc-ce1d034553d3")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -5957,20 +6002,8 @@
 				)
 			)
 		)
-		(property "Footprint" "ECE445L:C_Axial_200mil"
-			(at 0 0 -90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "a6d69ac3-8c47-47d5-bddd-c2cd8beab436")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 -90)
+		(property "Datasheet" "~"
+			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "b088a547-5ee8-442a-b29f-1ff3668bc33b")
@@ -5982,7 +6015,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "3f766868-c204-4ae1-9ddd-4f5d348a4752")
@@ -5995,8 +6028,8 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/64335339-18e4-4897-b3ac-29d3c8240702")
-		(sheetname "Root")
-		(sheetfile "Lab6.kicad_sch")
+		(sheetname "/")
+		(sheetfile "ECE445L_Lab6.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 1.27 1.27)
@@ -6200,6 +6233,7 @@
 			(pintype "passive")
 			(uuid "ce399c86-045b-4687-bfa2-4cdf9b989e1b")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Axial_L5.1mm_D3.1mm_P15.00mm_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -6240,19 +6274,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ECE445L:C_Axial_200mil"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "61101d53-4550-4bee-ac97-1e8670455898")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -6278,8 +6300,8 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/c722d7d5-c615-4224-892d-0ef2a89bd714")
-		(sheetname "Root")
-		(sheetfile "Lab6.kicad_sch")
+		(sheetname "/")
+		(sheetfile "ECE445L_Lab6.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 1.27 -1.27)
@@ -6483,6 +6505,7 @@
 			(pintype "passive")
 			(uuid "258705f8-dc52-465d-86f4-b14718826433")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Axial_L5.1mm_D3.1mm_P15.00mm_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -6523,19 +6546,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ECE445L:Testpoint_1x02_P2.54mm"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "41d6dfc2-657d-420d-87b2-c7f8a7c6057d")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -6561,8 +6572,8 @@
 		)
 		(property ki_fp_filters "Jumper* TestPoint*2Pads* TestPoint*Bridge*")
 		(path "/ed12f71b-99b1-4c0e-aa1d-7130e883d2b4")
-		(sheetname "Root")
-		(sheetfile "Lab6.kicad_sch")
+		(sheetname "/")
+		(sheetfile "ECE445L_Lab6.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -1.8 -1.8)
@@ -6677,6 +6688,7 @@
 			(pintype "passive")
 			(uuid "5fd52a00-57f3-4903-8921-70c8a88ebb49")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -6717,19 +6729,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ECE445L:C_Axial_200mil"
-			(at 0 0 180)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "071188ba-f3da-472e-9d3d-41fab22c004a")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -6755,8 +6755,8 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/3a523a05-725c-4fff-b58d-319650c63058")
-		(sheetname "Root")
-		(sheetfile "Lab6.kicad_sch")
+		(sheetname "/")
+		(sheetfile "ECE445L_Lab6.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 3.81 1.27)
@@ -6960,6 +6960,7 @@
 			(pintype "passive")
 			(uuid "b30a201a-ceb3-48b1-963c-a3845d4cd1f5")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Axial_L5.1mm_D3.1mm_P15.00mm_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -6994,18 +6995,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "ECE445L:adafruit_st7735r2"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "f9594c82-bbce-4772-bfd8-1e797db0b9b2")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -7095,8 +7084,8 @@
 			)
 		)
 		(path "/66428456-b083-40a1-8313-b2503d5b5c62")
-		(sheetname "Root")
-		(sheetfile "Lab6.kicad_sch")
+		(sheetname "/")
+		(sheetfile "ECE445L_Lab6.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -17.145 -25.4)
@@ -7145,7 +7134,7 @@
 				(width 0.1)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "86ae14dc-0b90-4511-8701-348bdab59c91")
 		)
@@ -7200,7 +7189,7 @@
 				(width 0.2032)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "e121cc30-59e9-473a-be78-4f3b780d8d23")
 		)
@@ -7335,7 +7324,7 @@
 				(width 0.2032)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "f5536ccb-7772-4bb0-93c8-1c1c7a81450f")
 		)
@@ -7389,21 +7378,21 @@
 			(at -14.605 25.4 90)
 			(size 2.2 2.2)
 			(drill 2.2)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "d5fec946-6163-42c4-a8a4-9b478880ac92")
 		)
 		(pad "" np_thru_hole circle
 			(at 14.605 -25.4 90)
 			(size 2.2 2.2)
 			(drill 2.2)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "ed93fac9-94ea-404c-a06e-a4df88b80039")
 		)
 		(pad "" np_thru_hole circle
 			(at 14.605 25.4 90)
 			(size 2.2 2.2)
 			(drill 2.2)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "8081603b-0549-4f9e-9324-e58ebc7e8f2b")
 		)
 		(pad "1" thru_hole rect
@@ -7526,6 +7515,7 @@
 			(solder_mask_margin 0.102)
 			(uuid "3caaad4c-8800-427b-8426-13a7953f1445")
 		)
+		(embedded_fonts no)
 		(model "${KIPRJMOD}/models/adafruit_st7735r.stp"
 			(offset
 				(xyz -16.5 -28.5 2.5)
@@ -7577,18 +7567,6 @@
 				)
 			)
 		)
-		(property "Footprint" "ECE445L:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "14c851fa-4ac8-4100-9472-f1886a1dc8aa")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" "https://users.ece.utexas.edu/~valvano/mspm0/CarbonFilmresistors.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
@@ -7615,8 +7593,8 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/6d860e7c-f5af-45c6-8fd7-231590e86ac6")
-		(sheetname "Root")
-		(sheetfile "Lab6.kicad_sch")
+		(sheetname "/")
+		(sheetfile "ECE445L_Lab6.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 5.73 -0.92)
@@ -7809,6 +7787,7 @@
 			(pintype "passive")
 			(uuid "84ae073a-96a9-4821-8122-8f4454cb9b32")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -7849,19 +7828,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ECE445L:C_Axial_200mil"
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "1afa2646-97b4-4e72-8d84-16ef3a3f494b")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -7887,8 +7854,8 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/717c2ffe-cb2d-425e-8449-53d63db23bd0")
-		(sheetname "Root")
-		(sheetfile "Lab6.kicad_sch")
+		(sheetname "/")
+		(sheetfile "ECE445L_Lab6.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 3.81 -1.27)
@@ -8092,6 +8059,7 @@
 			(pintype "passive")
 			(uuid "22cd051a-8575-4aa1-8712-c5ce41657078")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Axial_L5.1mm_D3.1mm_P15.00mm_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -8132,19 +8100,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ECE445L:CP_Radial_Tantal200mil"
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "54e81059-892b-407d-b8e0-40ae6a0533d4")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -8170,8 +8126,8 @@
 		)
 		(property ki_fp_filters "CP_*")
 		(path "/95add478-89f2-4849-b9f8-45cac358bc4d")
-		(sheetname "Root")
-		(sheetfile "Lab6.kicad_sch")
+		(sheetname "/")
+		(sheetfile "ECE445L_Lab6.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -0.539749 -2.055)
@@ -8222,7 +8178,7 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
 			(uuid "953f75cd-5ce9-4426-bde9-367273801496")
 		)
@@ -8253,7 +8209,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "47b3ee27-287d-4c26-a737-899163dde485")
 		)
@@ -8288,6 +8244,7 @@
 			(pintype "passive")
 			(uuid "b785900d-44bc-4343-9ff2-2ef45fab41cc")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Capacitor_THT.3dshapes/CP_Radial_Tantal_D6.0mm_P5.00mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -8328,19 +8285,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ECE445L:Testpoint_1x02_P2.54mm"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "28536b71-1bb9-4918-a6f0-8863fe96095b")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -8366,8 +8311,8 @@
 		)
 		(property ki_fp_filters "Jumper* TestPoint*2Pads* TestPoint*Bridge*")
 		(path "/93473976-c2d6-49ba-a029-6da1440cc446")
-		(sheetname "Root")
-		(sheetfile "Lab6.kicad_sch")
+		(sheetname "/")
+		(sheetfile "ECE445L_Lab6.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -1.8 -1.8)
@@ -8482,6 +8427,7 @@
 			(pintype "passive")
 			(uuid "2dca655e-7d69-49aa-82b4-fc88f8e7f0bb")
 		)
+		(embedded_fonts no)
 		(model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -8522,18 +8468,6 @@
 				)
 			)
 		)
-		(property "Footprint" "ECE445L:MountingHole_4_40"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "51b41c7c-690e-4fab-9f5b-93d007a4fa95")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
@@ -8559,8 +8493,8 @@
 			)
 		)
 		(path "/6564cad0-1abc-49a7-b49e-182bd0e7e31f")
-		(sheetname "Root")
-		(sheetfile "Lab6.kicad_sch")
+		(sheetname "/")
+		(sheetfile "ECE445L_Lab6.kicad_sch")
 		(attr exclude_from_pos_files)
 		(fp_circle
 			(center 0 0)
@@ -8569,7 +8503,7 @@
 				(width 0.15)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "Cmts.User")
 			(uuid "9b1bdf82-712c-49db-8e95-988cd87e5b34")
 		)
@@ -8580,7 +8514,7 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
 			(uuid "86117740-4755-4086-a756-7d90fc4315da")
 		)
@@ -8603,9 +8537,10 @@
 			(remove_unused_layers no)
 			(net 72 "unconnected-(H3-Hole-Pad1)")
 			(pinfunction "Hole")
-			(pintype "power_in")
+			(pintype "power_in+no_connect")
 			(uuid "481b2244-a782-4508-aaa8-b57b9e0d3db6")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "ECE445L:ABM3"
 		(layer "F.Cu")
@@ -8633,18 +8568,6 @@
 				(font
 					(size 1.27 1.27)
 					(thickness 0.254)
-				)
-			)
-		)
-		(property "Footprint" "ECE445L:ABM3"
-			(at 0 0 90)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "b9d4d140-1386-44a0-b29c-8772f266ffbd")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
 				)
 			)
 		)
@@ -8733,8 +8656,8 @@
 			)
 		)
 		(path "/4f514a2f-0c84-4374-8bcb-2b918da2e30b")
-		(sheetname "Root")
-		(sheetfile "Lab6.kicad_sch")
+		(sheetname "/")
+		(sheetfile "ECE445L_Lab6.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -2.5 -1.6)
@@ -8892,7 +8815,7 @@
 		(pad "1" smd rect
 			(at -2.05 0 90)
 			(size 1.9 2.4)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 3 "/OSC2")
 			(pinfunction "1")
 			(pintype "passive")
@@ -8901,12 +8824,13 @@
 		(pad "2" smd rect
 			(at 2.05 0 90)
 			(size 1.9 2.4)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 1 "/OSC1")
 			(pinfunction "2")
 			(pintype "passive")
 			(uuid "c046f179-0176-49df-a560-af418ca179c3")
 		)
+		(embedded_fonts no)
 		(model "ABM3-16.000MHZ-B2-T.stp"
 			(offset
 				(xyz 0 0 0.2499999962)
@@ -8947,18 +8871,6 @@
 				)
 			)
 		)
-		(property "Footprint" "ECE445L:MountingHole_4_40"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "86c836c2-5a2e-40c5-81be-bbe41a74db41")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
@@ -8984,8 +8896,8 @@
 			)
 		)
 		(path "/866024c5-03d3-4396-94bd-a892dcc3ae80")
-		(sheetname "Root")
-		(sheetfile "Lab6.kicad_sch")
+		(sheetname "/")
+		(sheetfile "ECE445L_Lab6.kicad_sch")
 		(attr exclude_from_pos_files)
 		(fp_circle
 			(center 0 0)
@@ -8994,7 +8906,7 @@
 				(width 0.15)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "Cmts.User")
 			(uuid "a12b7856-c722-4c1f-b623-e8fb63bf4940")
 		)
@@ -9005,7 +8917,7 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
 			(uuid "45242057-ab62-4ce2-a84e-985b4f90cffa")
 		)
@@ -9028,9 +8940,10 @@
 			(remove_unused_layers no)
 			(net 71 "unconnected-(H2-Hole-Pad1)")
 			(pinfunction "Hole")
-			(pintype "power_in")
+			(pintype "power_in+no_connect")
 			(uuid "95e43471-775d-48b7-97bf-7292ac9b6364")
 		)
+		(embedded_fonts no)
 	)
 	(gr_rect
 		(start 31.685 25.38)
@@ -9039,7 +8952,7 @@
 			(width 0.15)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "Edge.Cuts")
 		(uuid "32c847c4-dbde-41f2-a934-684d1cddf13f")
 	)
@@ -9291,4 +9204,5 @@
 		(net 5)
 		(uuid "daea4995-a949-488a-bbac-4ea640b5fcef")
 	)
+	(embedded_fonts no)
 )
