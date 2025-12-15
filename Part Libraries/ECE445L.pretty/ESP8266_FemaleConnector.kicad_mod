@@ -1,7 +1,7 @@
-(footprint "PinHeader_2x04_P2.54mm_Vertical"
-	(version 20240108)
+(footprint "ESP8266_FemaleConnector"
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(descr "Through hole straight pin header, 1x03, 2.54mm pitch, single row")
 	(tags "Through hole pin header THT 1x03 2.54mm single row")
@@ -16,25 +16,13 @@
 			)
 		)
 	)
-	(property "Value" "PinHeader_2x04_P2.54mm_Vertical"
+	(property "Value" "ESP8266_FemaleConnector"
 		(at -3.175 10.795 0)
 		(layer "F.SilkS")
 		(uuid "db29ad0b-b335-4faf-88c7-319c7ace35e3")
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "4e9d438a-2664-4bc1-8b86-80fc2b5d0a2f")
-		(effects
-			(font
-				(size 1.27 1.27)
 				(thickness 0.15)
 			)
 		)
@@ -409,15 +397,16 @@
 		(remove_unused_layers no)
 		(uuid "09740b9a-beef-4ff0-ae0a-d86c60ce2c6b")
 	)
-	(model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x03_P2.54mm_Vertical.wrl"
+	(embedded_fonts no)
+	(model "${KICAD6_3DMODEL_DIR}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_2x04_P2.54mm_Vertical.wrl"
 		(offset
-			(xyz 0 0 0)
+			(xyz 2.5 0 0)
 		)
 		(scale
 			(xyz 1 1 1)
 		)
 		(rotate
-			(xyz 0 0 0)
+			(xyz -0 -0 -0)
 		)
 	)
 )

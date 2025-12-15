@@ -6731,7 +6731,7 @@
 				(justify left top)
 			)
 		)
-		(property "Footprint" "ECE445L:TL431CLPM"
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline_Wide"
 			(at 26.67 -94.92 0)
 			(effects
 				(font
