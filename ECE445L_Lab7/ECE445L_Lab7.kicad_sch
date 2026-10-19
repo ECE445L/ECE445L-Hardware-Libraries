@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20250114)
+	(version 20260306)
 	(generator "eeschema")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(uuid "69b823fd-c065-40ff-9bb9-c5835555f3eb")
 	(paper "A4")
 	(title_block
@@ -15,8 +15,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "H"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -25,6 +29,8 @@
 			)
 			(property "Value" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -33,29 +39,35 @@
 			)
 			(property "Footprint" "ECE445L:MountingHole_4_40"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Drill hole for 4-40 screw"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "MountingHole_1_1"
@@ -85,22 +97,28 @@
 		(lib_id "ECE445L:MountingHole")
 		(at 272.415 38.735 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5c519b4b-3136-445d-ac30-4880eb655763")
 		(property "Reference" "H4"
 			(at 268.605 35.56 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 268.605 36.83 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -109,36 +127,42 @@
 		)
 		(property "Footprint" "ECE445L:MountingHole_4_40"
 			(at 272.415 38.735 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 272.415 38.735 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Drill hole for 4-40 screw"
 			(at 272.415 38.735 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
 			(uuid "599bad64-021c-487e-8969-dc6f76bf6855")
 		)
 		(instances
-			(project "Lab7"
+			(project "ECE445L_Lab7"
 				(path "/69b823fd-c065-40ff-9bb9-c5835555f3eb"
 					(reference "H4")
 					(unit 1)
@@ -150,22 +174,28 @@
 		(lib_id "ECE445L:MountingHole")
 		(at 272.415 23.495 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "92ac0c24-4f7f-47ea-8044-2f9af8415a7e")
 		(property "Reference" "H1"
 			(at 268.605 20.32 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 268.605 21.59 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -174,36 +204,42 @@
 		)
 		(property "Footprint" "ECE445L:MountingHole_4_40"
 			(at 272.415 23.495 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 272.415 23.495 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Drill hole for 4-40 screw"
 			(at 272.415 23.495 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
 			(uuid "e6669966-01df-42e5-bc80-846cbcc9446c")
 		)
 		(instances
-			(project ""
+			(project "ECE445L_Lab7"
 				(path "/69b823fd-c065-40ff-9bb9-c5835555f3eb"
 					(reference "H1")
 					(unit 1)
@@ -215,22 +251,28 @@
 		(lib_id "ECE445L:MountingHole")
 		(at 272.415 28.575 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "da103fb7-862f-4c87-b05a-1369690e4702")
 		(property "Reference" "H2"
 			(at 268.605 25.4 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 268.605 26.67 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -239,36 +281,42 @@
 		)
 		(property "Footprint" "ECE445L:MountingHole_4_40"
 			(at 272.415 28.575 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 272.415 28.575 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Drill hole for 4-40 screw"
 			(at 272.415 28.575 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
 			(uuid "b63cabe6-21c9-4c57-816d-c98151e36686")
 		)
 		(instances
-			(project "Lab7"
+			(project "ECE445L_Lab7"
 				(path "/69b823fd-c065-40ff-9bb9-c5835555f3eb"
 					(reference "H2")
 					(unit 1)
@@ -280,22 +328,28 @@
 		(lib_id "ECE445L:MountingHole")
 		(at 272.415 33.655 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fb3dbf6a-ca47-4016-a7c7-20ca501ddfe6")
 		(property "Reference" "H3"
 			(at 268.605 30.48 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 268.605 31.75 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -304,36 +358,42 @@
 		)
 		(property "Footprint" "ECE445L:MountingHole_4_40"
 			(at 272.415 33.655 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 272.415 33.655 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Drill hole for 4-40 screw"
 			(at 272.415 33.655 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
 			(uuid "08fee980-d525-4e2c-8502-073a651410c6")
 		)
 		(instances
-			(project "Lab7"
+			(project "ECE445L_Lab7"
 				(path "/69b823fd-c065-40ff-9bb9-c5835555f3eb"
 					(reference "H3")
 					(unit 1)
@@ -354,11 +414,13 @@
 			(type solid)
 		)
 		(fill
-			(color 255 255 0 1.0000)
+			(color 255 255 0 1)
 		)
 		(uuid "120cc903-6d6c-4a77-ad9c-c9f63dede169")
 		(property "Sheetname" "Lab7_power"
 			(at 38.1 24.6884 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -368,6 +430,8 @@
 		)
 		(property "Sheetfile" "Lab7_power.kicad_sch"
 			(at 38.1 46.9396 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -396,11 +460,13 @@
 			(type solid)
 		)
 		(fill
-			(color 255 229 191 1.0000)
+			(color 255 229 191 1)
 		)
 		(uuid "9e7b1dfa-492f-407a-9f72-cee77954c346")
 		(property "Sheetname" "Lab7_wifi"
 			(at 169.545 102.1584 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -410,6 +476,8 @@
 		)
 		(property "Sheetfile" "Lab7_wifi.kicad_sch"
 			(at 169.545 119.9646 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -438,11 +506,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 255 0 1.0000)
+			(color 0 255 0 1)
 		)
 		(uuid "a500a078-11dc-409b-bff9-a8c35e1dabf8")
 		(property "Sheetname" "Lab7_Output"
 			(at 186.055 62.7884 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -452,6 +522,8 @@
 		)
 		(property "Sheetfile" "Lab7_Output.kicad_sch"
 			(at 186.055 83.7696 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -480,11 +552,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 255 255 1.0000)
+			(color 0 255 255 1)
 		)
 		(uuid "c4445928-c95f-4ef5-82c7-58ae1ba9c5bb")
 		(property "Sheetname" "Lab7_microcontroller"
 			(at 104.775 73.5834 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -494,6 +568,8 @@
 		)
 		(property "Sheetfile" "Lab7_microcontroller.kicad_sch"
 			(at 104.775 96.4696 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -522,11 +598,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 255 0 1.0000)
+			(color 0 255 0 1)
 		)
 		(uuid "e9432827-5ece-4de0-90fe-13c05c5c04a5")
 		(property "Sheetname" "Lab7_Input"
 			(at 39.37 69.7734 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -536,6 +614,8 @@
 		)
 		(property "Sheetfile" "Lab7_Input.kicad_sch"
 			(at 39.37 96.4696 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
